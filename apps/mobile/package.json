@@ -1,0 +1,50 @@
+{
+  "name": "@aura/mobile",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "dependencies": {
+    "@aura/core": "*",
+    "@expo/vector-icons": "^15.0.2",
+    "@op-engineering/op-sqlite": "^19.0.5",
+    "expo": "~58.0.24",
+    "expo-battery": "~58.0.4",
+    "expo-build-properties": "~58.0.12",
+    "expo-clipboard": "~58.0.4",
+    "expo-constants": "~58.0.16",
+    "expo-dev-client": "~58.0.19",
+    "expo-device": "~58.0.5",
+    "expo-document-picker": "~58.0.5",
+    "expo-file-system": "~58.0.13",
+    "expo-image-picker": "~58.0.10",
+    "expo-linking": "~58.0.17",
+    "expo-router": "~58.0.31",
+    "expo-status-bar": "~58.0.5",
+    "expo-text-extractor": "^2.0.0",
+    "llama.rn": "^0.13.0-rc.11",
+    "pdfjs-dist": "^6.5.438",
+    "react": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-safe-area-context": "~5.11.1",
+    "react-native-screens": "~4.30.1",
+    "react-native-webview": "14.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
+    "typescript": "~6.0.3"
+  },
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "typecheck": "tsc --noEmit",
+    "lint": "expo lint",
+    "postinstall": "node scripts/bundle-pdfjs.mjs"
+  },
+  "private": true,
+  "op-sqlite": {
+    "fts5": true
+  }
+}

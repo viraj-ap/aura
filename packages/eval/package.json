@@ -1,0 +1,26 @@
+{
+  "name": "@aura/eval",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "eval": "tsx src/cli.ts",
+    "recall": "tsx src/recall.ts",
+    "report": "tsx src/report-cli.ts",
+    "judge-audit": "tsx src/judge-audit.ts",
+    "bench-models": "tsx src/bench-models.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aura/core": "*",
+    "@aura/node": "*",
+    "better-sqlite3": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vitest": "^3.2.0"
+  }
+}

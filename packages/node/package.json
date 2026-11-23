@@ -1,0 +1,24 @@
+{
+  "name": "@aura/node",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "chat": "tsx src/cli.ts",
+    "smoke": "tsx src/smoke.ts",
+    "bench": "tsx src/bench.ts",
+    "fit": "tsx src/fit.ts"
+  },
+  "dependencies": {
+    "@aura/core": "*",
+    "better-sqlite3": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

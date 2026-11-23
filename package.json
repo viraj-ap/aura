@@ -1,0 +1,33 @@
+{
+  "name": "aura",
+  "description": "On-device AI assistant with long-term memory for small GGUF models",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test -w @aura/core && npm run test -w @aura/eval",
+    "typecheck": "tsc -p packages/core && tsc -p packages/node && tsc -p packages/eval && tsc -p apps/mobile --noEmit",
+    "chat": "npm run chat -w @aura/node",
+    "smoke": "npm run smoke -w @aura/node",
+    "bench": "npm run bench -w @aura/node",
+    "eval": "npm run eval -w @aura/eval --",
+    "recall": "npm run recall -w @aura/eval --",
+    "report": "npm run report -w @aura/eval --",
+    "judge-audit": "npm run judge-audit -w @aura/eval --",
+    "bench-models": "npm run bench-models -w @aura/eval --",
+    "fit": "npm run fit -w @aura/node --",
+    "app": "npm run start -w @aura/mobile"
+  },
+  "allowScripts": {
+    "better-sqlite3@12.11.1": true,
+    "esbuild@0.28.2": true,
+    "llama.rn@0.13.0-rc.11": true
+  },
+  "overrides": {
+    "react": "19.3.0"
+  }
+}
